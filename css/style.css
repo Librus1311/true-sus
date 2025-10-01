@@ -220,6 +220,7 @@ header .container{
     gap: 10px;
     font-weight: 500;
     margin-top: 40px;
+    cursor: pointer;
 }
 
 .faq-menu-active{
@@ -236,6 +237,39 @@ header .container{
     border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
 }
+
+.faq-group-header{
+    padding: 20px 0;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.faq-group-header h4{
+    font-weight: 600;
+    width: 95%;
+    margin-top: 0;
+}
+
+.faq-group-header i{
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.faq-group-body{
+    display: none;
+}
+
+.faq-group-body.open{
+    display: block;
+    width: 95%;
+}
+
+
+
+
 
 /* UTILITY CLASSES */
 
