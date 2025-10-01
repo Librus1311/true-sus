@@ -148,10 +148,6 @@ header .container{
     margin-top: 72px;
 }
 
-.pricing-subheading{
-
-}
-
 .pricing-card{
     display: flex;
     flex-direction: column;
@@ -208,11 +204,39 @@ header .container{
 .pricing-features{
     margin-top: 16px;
     font-weight: 550;
+    margin-bottom: 70px;
 }
 
 .fa-arrow-down{
     padding-left: 10px;
 }
+
+/* FAQ */
+
+.faq-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.faq-menu-active{
+    padding:12px 24px;
+    border-radius: 10px;
+}
+
+.faq-menu-default{
+    padding:12px 24px;
+    border-radius: 10px;
+}
+
+.faq-group{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
 /* UTILITY CLASSES */
 
 .container{
