@@ -106,6 +106,7 @@ header .container{
 }
 
 .video-preview{
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -180,6 +181,12 @@ header .container{
     font-weight: 500;
     margin-bottom: 16px;
 }
+
+.free{
+    padding-bottom: 24px;
+    border-bottom: 1px solid #494949;
+}
+
 
 .pricing-card-price{
     font-size: 36px;
@@ -479,13 +486,14 @@ footer i{
     position: fixed;
     top: 0;
     right: -300px;
-
-    width: 250px;
+    padding-right: 0;
+    width: 180px;
     height: 100%;
     z-index: 100;
     background: #fff;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
     transition: right 0.3s ease-in-out;
+    padding-left: 20px;
 }
 
 .mobile-menu.active{
@@ -511,6 +519,9 @@ footer i{
 /* MEDIA QUERIES */
 
 @media(max-width: 960px){
+    .text-xxl{
+        font-size: 2.5rem;
+    }
     
 }
 
@@ -527,6 +538,63 @@ footer i{
         display: flex;
         flex-direction: column;
     }
+
+    .hamburger-btn{
+        padding-right: 0;
+    }
+
+    header .container{
+        background: url('../img/hero-bg-mobile.png') no-repeat;
+        background-size: 350px 400px;
+        background-position: bottom;
+        height: 700px;
+    }
+
+    .hero-container{
+        margin-top: 50px;
+    }
+
+    .hero-container, .hero-header-text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-header-text{
+        margin-bottom: 30px;
+    }
+
+    .hero-header-btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .testimonials-heading{
+        width: 100%;
+    }
+
+    .testimonials-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pricing-flex{
+        flex-direction: column;
+    }
+
+    .footer-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-card{
+        margin-right: 0px;
+    }
+
+    .footer-grid > div{
+        text-align: center;
+    }
+
 }
 
 @media(max-width: 500px){
